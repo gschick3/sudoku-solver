@@ -1,9 +1,10 @@
 #include <iostream>
 
-struct coord {
+struct coord { // move this to a class
 	int row;
 	int col;
 	int value = 0;
+	int notes[9] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }; // change to 1 if index+1 is available in this space
 	coord() {
 		row = 0;
 		col = 0;
